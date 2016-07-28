@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="windows-1251">
+    <title>Big Task</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;           
+        }
+        body{
+            background-color:gray
+        }
+        .main-column{
+            background-color:white;
+            margin-left:15%;
+            margin-right:15%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width:620px;
+            font-family: Arial;
+            height:877px;
+        }
+        .left-column{
+            width: 40%;
+            margin-right: 2.5%;
+            margin-left: 5%;
+            display: inline-block;
+            float:left;
+        }
+        .right-column{
+            width: 40%;
+            margin-left: 2.5%;
+            margin-right: 5%;
+            display: inline-block;
+        }
+        .bound-line{
+            background-color:#6c4278;
+            background: linear-gradient(to right, #8e649A, white, #8e649A);
+            height:20px;
+        }
+
+        #nameSurname{
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        #name{
+            font-size:40px;
+        }
+        #surname{
+            font-size:23px;
+        }
+
+        #webDesigner{
+            margin-left: 10px;
+            margin-bottom:15px;
+            text-transform: uppercase;
+            font-family:'Arial';
+            color:#6c4278;
+        }
+        #webAndGraphic{
+            font-size:14px;
+        }
+        #designer{
+            font-size:22px;
+        }
+        .info-block{
+             
+        }
+        .info-header{
+           background-color:white;
+           padding:5px;
+           margin-left:5px;
+           text-transform: uppercase;
+           font-family: Arial;
+           font-weight:bold;
+           font-size:11px;
+        }
+         .info-header2{
+           text-transform: uppercase;
+           font-family: Arial;
+           font-weight:bold;
+           font-size:13px;
+        }
+        .line{
+            position:absolute;
+            float:left;
+            background-color:#6c4278;
+            display: inline-block;
+            min-width:4px   ;
+            min-height:25px; 
+        }
+        .long-line{
+            margin-top:2px;
+            position:absolute;
+            background-color:#6c4278;
+            display: inline-block;
+            min-width:2px;
+            min-height:112px; 
+        }
+        .small-text{
+             font-size:6px;
+             padding-left: 20px;
+             max-width:210px;
+        }
+        .quote{
+            height:initial;
+            font-family: Georgia, serif;
+            font-size: 40px;
+            color:#6c4278;
+            max-height:20px;           
+        }
+
+        .right-side{
+            float:right;
+            margin-top:-25px;
+            margin-bottom:25px;
+        }
+        .left-side{
+            margin-left: 5px;
+        }
+        .arrow-right {
+            margin:1px;
+            float:left;
+            width: 0;
+            height: 0;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-left: 6px solid #6c4278;
+        }
+        .years{
+            font-size:7px;
+            font-weight:bold;
+        }
+        .table{
+            display:table;
+        }
+        .row{
+            display: table-row;
+        }
+        .year-cell{           
+            display: table-cell;
+            width:70px;
+        }
+        .year-info-cell{
+            display: table-cell;
+        }
+        .degree{
+            padding-top:2px;
+            color:#6c4278;
+            font-size:10px;
+            font-weight:bold;
+            text-transform:uppercase;
+        }
+        .school-name{
+            font-size:9px;
+            font-weight:bold;
+        }
+        .small-info{
+            font-size:7px;
+            font-weight:bold;
+        }
+        .color-text{
+            color:#6c4278;
+        }
+        .medium-text{
+            font-size:7px;
+            padding-top:1px;
+        }
+        .reason{
+            margin-left:15px;
+            margin-bottom: 20px;
+        }
+        .big-text{
+            text-transform:uppercase;
+        }
+        .cell{    
+            display: table-cell;
+            padding:5px;
+            padding-left:0px;
+        }
+        .circle{
+            width: 20px;
+            height: 20px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            background: #6c4278;
+        }
+        .circle-title{
+            color:#6c4278;
+            text-transform: uppercase;
+            font-weight:700;
+            font-size:14px;
+        }
+        .circle-info{
+            font-size:9px;
+            font-weight:700;
+        }
+        .contacts-cell{
+            display: table-cell;
+            vertical-align:middle;
+        }
+        .available-block{
+           padding-left:5px;
+           margin-top:20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main-column">
+        <div class="bound-line"></div>
+        <div class="left-column">
+            <div id="nameSurname">
+                <div id="name">Name</div>
+                <div id="surname">Surname</div>
+            </div>
+            <div id="webDesigner">
+                <div id="webAndGraphic">Web &amp; graphic</div>
+                <div id="designer">Designer</div>
+            </div>
+
+
+            <div class="info-block">
+                <div class="line"></div>
+                <div class="info-header">Personal statement</div>
+            </div>
+            <div class="quote left-side">&#8220;</div>
+            <div class="small-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="quote right-side" style="float:right;">&#8222;</div>
+            <br />
+
+            <div class="info-block">
+                <div class="line"></div>
+                <div class="info-header">Education</div>
+            </div>
+            <div style="margin-top:8px; margin-left:3px">
+                <div class="long-line"></div>
+                <div class="table">
+                    <div class="row">
+                        <div class="year-cell">
+                            <div class="arrow-right"></div>
+                            <div class="years">2005 - 2008</div>
+                        </div>
+                        <div class="year-info-cell">
+                            <div class="degree">Master degree 01</div>
+                            <div class="school-name">School name 01</div>
+                            <div class="small-info">Short description</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="year-cell">
+                            <div class="arrow-right"></div>
+                            <div class="years">2008 - 2011</div>
+                        </div>
+                        <div class="year-info-cell">
+                            <div class="degree">Master degree 01</div>
+                            <div class="school-name">School name 01</div>
+                            <div class="small-info">Short description</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="year-cell">
+                            <div class="arrow-right"></div>
+                            <div class="years">2011 - 2012</div>
+                        </div>
+                        <div class="year-info-cell">
+                            <div class="degree">Master degree 01</div>
+                            <div class="school-name">School name 01</div>
+                            <div class="small-info">Short description</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="year-cell">
+                            <div class="arrow-right"></div>
+                            <div class="years">2012 - 2014</div>
+                        </div>
+                        <div class="year-info-cell">
+                            <div class="degree">Master degree 01</div>
+                            <div class="school-name">School name 01</div>
+                            <div class="small-info">Short description</div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+            
+
+            <div class="info-block">
+                <div class="line"></div>
+                <div class="info-header">Expirience</div>
+            </div>
+            <div style="margin-top:8px; margin-left:3px">
+                <div class="year-table">
+                    <div class="year-row">
+                        <div class="year-cell">
+                            <div class="years">JUL - SEP 09</div>
+                        </div>
+                        <div class="year-info-cell">
+                            <div class="degree">Company Name 01</div>
+                            <div class="school-name">Specific job 01</div>
+                            <div class="small-info">Short description</div>
+                        </div>
+                    </div>                   
+                </div>
+            </div>
+
+            <div class="info-block">
+                <div class="line"></div>
+                <div class="info-header">Why we should <span class="color-text">work together</span>!</div>
+            </div>
+            <div class="reason">
+                <div class="medium-text">Give the reason number 01</div>
+                <div class="medium-text">Give the reason number 02</div>
+                <div class="medium-text">Give the reason number 03</div>
+                <div class="medium-text">Give the reason number 04</div>
+            </div>
+        </div>
+
+        <div class="right-column"> 
+            <div class="available-block">
+                <div class="info-header2">Available for:</div>
+                <div class="big-text">Hire <span class="color-text">&amp;</span> freelancer work</div>
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="contacts-cell">
+                            <div class="circle-title">Website</div>
+                            <div class="circle-info">www.yourwebsite.com</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="contacts-cell">
+                            <div class="circle-title">Phone number</div>
+                            <div class="circle-info">555-555-555</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="contacts-cell">
+                            <div class="circle-title">E-mail</div>
+                            <div class="circle-info">name@yourdomain.com</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                      
+        </div>
+        
+    </div>
+</body>
+</html>
