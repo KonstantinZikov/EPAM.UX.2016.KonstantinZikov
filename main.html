@@ -3,214 +3,7 @@
 <head>
     <meta charset="windows-1251">
     <title>Big Task</title>
-    <style type="text/css">
-        *{
-            margin: 0;
-            padding: 0;           
-        }
-        body{
-            background-color:gray
-        }
-        .main-column{
-            background-color:white;
-            margin-left:15%;
-            margin-right:15%;
-            padding-top: 15px;
-            padding-bottom: 15px;
-            width:620px;
-            font-family: Arial;
-            height:877px;
-        }
-        .left-column{
-            width: 40%;
-            margin-right: 2.5%;
-            margin-left: 5%;
-            display: inline-block;
-            float:left;
-        }
-        .right-column{
-            width: 40%;
-            margin-left: 2.5%;
-            margin-right: 5%;
-            display: inline-block;
-        }
-        .bound-line{
-            background-color:#6c4278;
-            background: linear-gradient(to right, #8e649A, white, #8e649A);
-            height:20px;
-        }
-
-        #nameSurname{
-            margin-top: 20px;
-            margin-left: 10px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            font-family: Arial;
-            font-weight: bold;
-        }
-        #name{
-            font-size:40px;
-        }
-        #surname{
-            font-size:23px;
-        }
-
-        #webDesigner{
-            margin-left: 10px;
-            margin-bottom:15px;
-            text-transform: uppercase;
-            font-family:'Arial';
-            color:#6c4278;
-        }
-        #webAndGraphic{
-            font-size:14px;
-        }
-        #designer{
-            font-size:22px;
-        }
-        .info-block{
-             
-        }
-        .info-header{
-           background-color:white;
-           padding:5px;
-           margin-left:5px;
-           text-transform: uppercase;
-           font-family: Arial;
-           font-weight:bold;
-           font-size:11px;
-        }
-         .info-header2{
-           text-transform: uppercase;
-           font-family: Arial;
-           font-weight:bold;
-           font-size:13px;
-        }
-        .line{
-            position:absolute;
-            float:left;
-            background-color:#6c4278;
-            display: inline-block;
-            min-width:4px   ;
-            min-height:25px; 
-        }
-        .long-line{
-            margin-top:2px;
-            position:absolute;
-            background-color:#6c4278;
-            display: inline-block;
-            min-width:2px;
-            min-height:112px; 
-        }
-        .small-text{
-             font-size:6px;
-             padding-left: 20px;
-             max-width:210px;
-        }
-        .quote{
-            height:initial;
-            font-family: Georgia, serif;
-            font-size: 40px;
-            color:#6c4278;
-            max-height:20px;           
-        }
-
-        .right-side{
-            float:right;
-            margin-top:-25px;
-            margin-bottom:25px;
-        }
-        .left-side{
-            margin-left: 5px;
-        }
-        .arrow-right {
-            margin:1px;
-            float:left;
-            width: 0;
-            height: 0;
-            border-top: 3px solid transparent;
-            border-bottom: 3px solid transparent;
-            border-left: 6px solid #6c4278;
-        }
-        .years{
-            font-size:7px;
-            font-weight:bold;
-        }
-        .table{
-            display:table;
-        }
-        .row{
-            display: table-row;
-        }
-        .year-cell{           
-            display: table-cell;
-            width:70px;
-        }
-        .year-info-cell{
-            display: table-cell;
-        }
-        .degree{
-            padding-top:2px;
-            color:#6c4278;
-            font-size:10px;
-            font-weight:bold;
-            text-transform:uppercase;
-        }
-        .school-name{
-            font-size:9px;
-            font-weight:bold;
-        }
-        .small-info{
-            font-size:7px;
-            font-weight:bold;
-        }
-        .color-text{
-            color:#6c4278;
-        }
-        .medium-text{
-            font-size:7px;
-            padding-top:1px;
-        }
-        .reason{
-            margin-left:15px;
-            margin-bottom: 20px;
-        }
-        .big-text{
-            text-transform:uppercase;
-        }
-        .cell{    
-            display: table-cell;
-            padding:5px;
-            padding-left:0px;
-        }
-        .circle{
-            width: 20px;
-            height: 20px;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-            background: #6c4278;
-        }
-        .circle-title{
-            color:#6c4278;
-            text-transform: uppercase;
-            font-weight:700;
-            font-size:14px;
-        }
-        .circle-info{
-            font-size:9px;
-            font-weight:700;
-        }
-        .contacts-cell{
-            display: table-cell;
-            vertical-align:middle;
-        }
-        .available-block{
-           padding-left:5px;
-           margin-top:20px;
-        }
-       
-    </style>
+    <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="main-column">
@@ -360,11 +153,140 @@
                             <div class="circle-info">name@yourdomain.com</div>
                         </div>
                     </div>
+                </div>                                            
+            </div>  
+            <div class="balance-container">
+                <div class="info-block">
+                    <div class="line"></div>
+                    <div class="info-header">Work / Play balance</div>
                 </div>
-                
+                <div class="happiness-container">
+                    <div class="degree">happiness</div>
+                    <div class="dotted-line"></div>
+                    <div class="circles-container">
+                        <div class="circle-transparent"></div>
+                        <div class="circle-transparent circle-transparent-right"></div>
+                        <div class="computer"></div>
+                        <div class="computer-bottom"></div>
+                        <div class="smile-face"></div>
+                        <div class="smile-eye smile-left-eye"></div>
+                        <div class="smile-eye smile-right-eye"></div>
+                        <div class="smile-smile"></div>
+                    </div>
+                </div>
+                <div class="happiness-left-col">
+                    <div class="big-text color-text">Work</div>
+                    <div class="balance-title">Preferences</div>
+                    <div class="balance-text">Social media</div>
+                    <br />
+                    <div class="balance-title">Print</div>
+                    <div class="balance-text">Posters</div>
+                    <div class="balance-text">Branding</div>
+                    <br />
+                    <div class="balance-title">Digital</div>
+                    <div class="balance-text">Inreface design</div>
+                    <div class="balance-text">Branding on-line</div>
+                    <div class="balance-text">Vector animation</div>
+                </div>
+                <div class="happiness-right-col">
+                    <div class="big-text color-text">Play</div>
+                    <div class="balance-title">Socialising</div>
+                    <div class="balance-text">Sport events</div>
+                    <br />
+                    <div class="balance-title">Interest</div>
+                    <div class="balance-text">Editorial</div>
+                    <div class="balance-text">Series/Movies</div>
+                    <div class="balance-text">Indian Culture</div>
+                    <br />
+                    <div class="balance-title">Hobbies</div>
+                    <div class="balance-text">Running</div>
+                    <div class="balance-text">Photography</div>
+                    <div class="balance-text">Playing tennis</div>
+                </div>
+            </div>   
+            <div class="info-block">
+                <div class="line"></div>
+                <div class="info-header">Personal skills</div>
+            </div>   
+            <div class="table">
+                <div class="row">
+                    <div class="cell balance-cell-left balance-text">
+                        Social Management
+                    </div>
+                    <div class="cell balance-cell-right">
+                        <div class="balance-line balance-line-1"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell balance-cell-left balance-text">
+                        Creativity
+                    </div>
+                    <div class="cell balance-cell-right">
+                        <div class="balance-line balance-line-2"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell balance-cell-left balance-text">
+                        Organization
+                    </div>
+                    <div class="cell balance-cell-right">
+                        <div class="balance-line balance-line-3"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell balance-cell-left balance-text">
+                        Communication
+                    </div>
+                    <div class="cell balance-cell-right">
+                        <div class="balance-line balance-line-4"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell balance-cell-left balance-text">
+                        Team Player
+                    </div>
+                    <div class="cell balance-cell-right">
+                        <div class="balance-line balance-line-5"></div>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="info-block">
+                <div class="line"></div>
+                <div class="info-header">Sowtware skills</div>
             </div>
-                      
+            <div>
+                <div class="histogram-container">
+                    <p class="histogram-percent">100%</p>
+                    <div class="histogram-graphic">
+                        <div class="histogram-line-print histogram-line-1">
+                            In Design
+                        </div>
+                        <div class="histogram-line-print histogram-line-2">
+                            Illustrator
+                        </div>
+                        <div class="histogram-line-print histogram-line-3">
+                            Photoshop
+                        </div>
+                        <div class="histogram-line-print histogram-line-4">
+                            Dreamweaver
+                        </div>
+                        <div class="histogram-line-web histogram-line-5">
+                            Wordpress
+                        </div>
+                        <div class="histogram-line-web histogram-line-6">
+                            HTML5&amp;CSS3
+                        </div>
+                        <div class="histogram-line-web histogram-line-7">
+                            Dreamweaver
+                        </div>
+
+                    </div>
+                </div> 
+            </div>
+                                  
         </div>
+        
         
     </div>
 </body>
