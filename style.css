@@ -3,30 +3,34 @@
     padding: 0;           
 }
 body{
-    background-color:gray
+    background-color:gray;
+}
+ul{
+    list-style:none;
 }
 .main-column{
     background-color:white;
-    margin-left:15%;
-    margin-right:15%;
+    margin:auto;
     padding-top: 15px;
     padding-bottom: 15px;
     width:620px;
     font-family: Arial;
     height:877px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around; 
 }
+
+.content{
+    display:flex;
+    justify-content:space-around; 
+}
+
 .left-column{
-    width: 40%;
-    margin-right: 2.5%;
-    margin-left: 5%;
-    display: inline-block;
-    float:left;
+
 }
 .right-column{
-    width: 40%;
-    margin-left: 2.5%;
-    margin-right: 5%;
-    display: inline-block;
+    margin-right:15px;
 }
 .bound-line{
     background-color:#6c4278;
@@ -36,31 +40,33 @@ body{
 
 #nameSurname{
     margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin-left: 16px;
+    margin-bottom: 25px;
     text-transform: uppercase;
     font-family: Arial;
-    font-weight: bold;
 }
 #name{
-    font-size:40px;
+    font-size:55px;
+    font-weight:bold;
+    line-height:47px;
 }
 #surname{
-    font-size:23px;
+    font-size:32px;
+    font-weight:bold;
 }
 
 #webDesigner{
-    margin-left: 10px;
+    margin-left: 16px;
     margin-bottom:15px;
     text-transform: uppercase;
     font-family:'Arial';
     color:#6c4278;
 }
 #webAndGraphic{
-    font-size:14px;
+    font-size:20px;
 }
 #designer{
-    font-size:22px;
+    font-size:31px;
 }
 .info-block{
     margin-top:30px; 
@@ -73,9 +79,9 @@ body{
     text-transform: uppercase;
     font-family: Arial;
     font-weight:bold;
-    font-size:11px;
+    font-size:13px;
 }
-    .info-header2{
+.info-header2{
     text-transform: uppercase;
     font-family: Arial;
     font-weight:bold;
@@ -84,23 +90,24 @@ body{
 .line{
     position:absolute;
     float:left;
-    background-color:#6c4278;
+    background-color:#5e1d5f;
     display: inline-block;
-    min-width:4px   ;
-    min-height:25px; 
+    min-width:5px;
+    min-height:22px; 
 }
 .long-line{
     margin-top:2px;
     position:absolute;
-    background-color:#6c4278;
+    background-color:#532853;
     display: inline-block;
     min-width:2px;
-    min-height:112px; 
+    height:81%;
 }
 .small-text{
-        font-size:6px;
-        padding-left: 20px;
-        max-width:210px;
+    font-size:6px;
+    padding-left: 20px;
+    max-width:210px;
+    font-weight:600;
 }
 .quote{
     height:initial;
@@ -125,28 +132,38 @@ body{
     height: 0;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
-    border-left: 6px solid #6c4278;
+    border-left: 6px solid #532853;
 }
+
 .years{
     font-size:7px;
     font-weight:bold;
 }
+
 .table{
     display:table;
 }
+
 .row{
-    display: table-row;
+    display: table-row;   
 }
+
+.education-container{
+    position:relative;
+}
+
 .year-cell{           
     display: table-cell;
-    width:70px;
+    width:70px;  
 }
+
 .year-info-cell{
-    display: table-cell;
+    display: table-cell;    
 }
+
 .degree{
     padding-top:2px;
-    color:#6c4278;
+    color:#49224e;
     font-size:10px;
     font-weight:bold;
     text-transform:uppercase;
@@ -158,6 +175,7 @@ body{
 .small-info{
     font-size:7px;
     font-weight:bold;
+    margin-bottom: 8px;
 }
 .color-text{
     color:#6c4278;
@@ -165,6 +183,7 @@ body{
 .medium-text{
     font-size:7px;
     padding-top:1px;
+    font-weight:600;
 }
 .reason{
     margin-left:15px;
@@ -206,104 +225,108 @@ body{
     margin-top:20px;
 }
 .circle-transparent{
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    border-radius: 25px;
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
     background-color:RGBA(156,101,156,.5);
     position: absolute
-
 }
 
 .circle-transparent-right{
-    margin-left:35px;
+    margin-left:35%;
 }
 .computer{
-    width: 16px;
-    height: 9px;
+    width: 16%;
+    height: 16%;
     background-color:transparent;
-    border-width:3px;
+    border-width:4px;
     border-color:white;
     border-style:solid;
     position: absolute;
-    margin-top:17px;
-    margin-left:14px;
+    top:33%;
+    left:14%;
 }
 .computer-bottom{
-    width: 12px;
-    height: 6px;
+    width: 12%;
+    height: 10%;
     background-color:white;
     position: absolute;
-    margin-top:30px;
-    margin-left:19px;
+    top:59%;
+    left:19%;
 }
 
 .smile-face{
-    width: 18px;
-    height: 18px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
+    width: 18%;
+    height: 36%;
+    border-radius: 50%;
     background: white;
     position: absolute;
-    margin-top: 16px;
-    margin-left: 52px
+    top: 32%;
+    left: 52%
 }
 .smile-eye{
-    width: 2px;
-    height: 2px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    border-radius: 1px;
+    width: 2%;
+    height: 4%;
+    border-radius: 50%;
     background: RGB(206,178,206);   
     position: absolute;
-    margin-top: 22px;
+    top: 44%;
     
 }
 .smile-left-eye{
-    margin-left: 57px
+    left: 57%;
 }
 .smile-right-eye{
-    margin-left: 63px
+    left: 63%;
 }
 .smile-smile{
-    width: 6px;
-    height: 3px;
+    width: 6%;
+    height: 12%;
     background-color: RGB(206,178,206);  
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border: 1px solid RGB(206,178,206); 
-    border-bottom: 0;
-    margin-left: 57px;
-    margin-top: 26px;
+    border-radius: 100%;
+    clip: rect(calc(50%), 100%, 100%, 0);
+    left: 58%;
+    top: 48%;
     position: absolute;
 }
 .happiness-container{
     position: absolute;    
     width:252px;
-    min-height:150px;
+    min-height:inherit;
     text-align:center;
 }
 .dotted-line{
-    width:126px;
-    min-height:inherit;
+    width:50%;
+    min-height:140px;
     border-style:none;
     border-right-style: dotted;
-    border-width: 2px;
+    border-width: 1px;
     border-color:#393939;
     position: absolute
 }
 .circles-container{
-    margin-left:84px;
-    margin-top:30px;
+    width:150px;
+    height:75px;
+    left:62px;
+    top:30px;
+    position:relative;
 }
 .happiness-left-col{
-    float:left;
+    height:inherit;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:flex-start;
+    height:inherit;
 }
 .happiness-right-col{
-    float:right;
+    height:inherit;
+    display:flex;
+    flex-direction:column;
     text-align:right;
+    justify-content:space-between;
+    align-items:flex-end;
+    height:inherit;
 }
 .balance-title{
     font-weight:bold;
@@ -316,7 +339,11 @@ body{
     font-size:9px;
 }
 .balance-container{
-    height:200px;
+    min-height:150px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:stretch;
 }
 .balance-cell-left{
     width:100px;  
@@ -324,8 +351,7 @@ body{
     vertical-align: middle;
 }
 .balance-cell-right{
-    width:150px;
-    
+    width:150px;   
 }
 .balance-line-container{
     position:relative;
@@ -356,56 +382,60 @@ body{
 
 
 .histogram-container{
-
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:row;
 }
 .histogram-percent{
-    float:left;
+    font-size:10px;
+    margin-left:8px;
+    font-weight:500;
 }
 .histogram-graphic{
-    float:right;
+    margin-top:-30px;
+    margin-left:30px;
     border-color:black;
     border-width:2px;
     border-left-style:solid;
     border-top-style:solid;
     padding-left:8px;
-    //min-width:200px;
     min-height:200px;
     font-size:8px;
     font-weight:bold;
-    transform-origin:49% 49% 0;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 .histogram-line-print{  
     margin-top:10px;
     padding:4px;
-    width:180px;  
+    width:150px;  
     background: linear-gradient(to bottom, #8e649A, white, #8e649A);
 }
 .histogram-line-web{  
     margin-top:10px;
     padding:4px;
-    width:180px;  
+    width:150px;  
+    color: white;
     background: linear-gradient(to bottom, #61007d, #8e649A, #61007d);
 }
 .histogram-line-1{
-    width:140px;  
+    width:130px;  
 }
 .histogram-line-2{
-    width:160px;  
+    width:100px;   
 }
 .histogram-line-3{
-    width:170px;  
+    width:100px;   
 }
 .histogram-line-4{
     width:100px;  
 }
 .histogram-line-5{
-    width:160px; 
+    width:100px;  
 }
 .histogram-line-6{
-    width:145px; 
+    width:100px;  
 }
 .histogram-line-7{
-    width:90px; 
+    width:100px;  
 }
