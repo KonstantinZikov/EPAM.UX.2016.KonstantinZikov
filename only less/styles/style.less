@@ -1,0 +1,545 @@
+@import (reference) "colors.less";
+@import (reference) "mixins.less";
+
+*{
+    margin: 0;
+    padding: 0;  
+  
+    ul{
+        list-style:none;
+    }
+    .degree{
+            padding-top:2px;
+            color:@degree-color;
+            font-size:16px;
+            font-weight:600;
+            text-transform:uppercase;
+    }
+    .big-text{
+        text-transform:uppercase;
+        margin-bottom:6px;
+        font-size:24px;
+    }
+    .info-block{
+        margin-top:40px; 
+        margin-bottom:10px;
+        background-color:white;
+        padding:5px;
+        padding-left:10px;
+        text-transform: uppercase;
+        font-family: @main-font;
+        font-weight:bold;
+        font-size:20px;
+        border-left:solid @info-block-border-color 7px;
+        text-overflow:ellipsis;
+        overflow: hidden;
+    }
+    .year-cell{ 
+        position:relative;
+        display:inline-block;   
+        vertical-align:top;     
+        width:100px;  
+        font-size:12px;
+        font-weight:bold; 
+        margin-left:20px;
+    }
+    .year-info-cell{
+        display: inline-block;    
+       
+        .school-name{
+            font-size:15px;
+            font-weight:bold;
+        }
+        .small-info{
+            font-size:10px;
+            font-weight:bold;
+            margin-bottom: 8px;
+        }
+    }
+    .color-text{
+        color:@main-color;
+    }        
+    .balance-title{
+        font-weight:bold;
+        font-size:15px;
+        color: @balance-title-color;
+        text-transform:uppercase;
+    }
+    .balance-text{
+        font-weight:600;
+        font-size:14px;
+    }    
+    .block{
+        margin-left:10px;
+    }
+}
+
+html{
+    position:relative;
+    min-height:100%;
+    body{
+        background-color:@back-color;
+
+        .bound-line{
+            background-color:@main-color;
+            background: linear-gradient(to right, @gradient-color,  @background, @gradient-color);
+            min-height:40px;
+            top:20px;
+            width:100%;
+            position:absolute;
+            z-index:2;
+        }
+        .main-column{
+            background-color:@background;
+            margin:auto;
+            padding-top: 60px;
+            padding-bottom: 15px;
+            width:980px;
+            font-family: @main-font;
+            flex-direction:column;
+            justify-content:space-around; 
+            position:relative;
+            min-height:100%;
+
+            .content{
+                overflow:hidden;
+                padding-bottom:40px;
+
+                .left-column{
+                    float:left;
+                    margin-left:5%;
+                    width:40%;
+
+                    .nameSurname{
+                        margin-top: 20px;
+                        margin-left: 25px;
+                        margin-bottom: 25px;
+                        text-transform: uppercase;
+                        font-family: @main-font;
+
+                        .name{
+                            font-size:88px;
+                            font-weight:bold;
+                            line-height:70px;
+                        }
+                        .surname{
+                            font-size:51px;
+                            font-weight:bold;
+                        }
+                    }
+                    .webDesigner{
+                        margin-left: 25px;
+                        margin-bottom:15px;
+                        text-transform: uppercase;
+                        font-family:@main-font;
+                        color:@main-color;
+
+                        .webAndGraphic{
+                            font-size:31px;
+                        }
+                        .designer{
+                            font-size:49px;
+                        }
+                    }
+                    .small-text{
+                        font-size:10px;
+                        margin-left: 30px;
+                        max-width:90%;
+                        font-weight:600;
+
+                        &:before{
+                            display:block;
+                            content:open-quote;
+                            font-family: Georgia, serif;
+                            font-size: 50px;
+                            color:@main-color;
+                            margin-bottom:-15px;
+                            margin-left:-20px;
+                        }
+                        &:after{
+                            content:close-quote;
+                            font-family: Georgia, serif;
+                            font-size: 50px;
+                            color:@main-color;
+                            float:right;
+                            display:block;
+                            margin-right:-20px;
+                            margin-top:10px;
+                        }
+                    }
+                    .education-container{
+                        margin-left:5px;
+                        li{
+                            position:relative;
+
+                            &:last-child{
+                                border-left: transparent 4px solid;
+                                .line{
+                                    min-width:0px;
+                                }
+                            }
+                            &:not(:last-child){
+                                border-left: @education-line-color 4px solid;
+                            }
+                            .year-cell:before{
+                                position:absolute;
+                                margin-left:-24px;
+                                margin-top:-2px;
+                                content:" ";
+                                display:block;
+                                float:left;
+                                width: 0;
+                                height: 0;
+                                border-top: 6px solid transparent;
+                                border-bottom: 6px solid transparent;
+                                border-left: 12px solid @education-line-color;
+                            }
+                        }
+                    }
+                    .reason{
+                        margin-left:30px;
+                        margin-bottom: 20px;
+
+                        .medium-text{
+                            font-size:13px;
+                            font-weight:600;
+                        }
+                    }
+                }
+                .right-column{
+                    float:right;
+                    margin-right:5%;
+                    width:40%;
+
+                    .available-block{
+                        padding-left:5px;
+                        margin-top:20px;
+
+                        .info-header2{
+                            text-transform: uppercase;
+                            font-family: @main-font;
+                            font-weight:bold;
+                            font-size:21px;
+                        }                      
+                        form{
+                            .contact{
+                                vertical-align:middle;
+                                border:none;
+
+                                &:before{
+                                    content:" ";
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    background: @main-color;
+                                    display:block;
+                                    float:left;
+                                    margin-right:3px;
+                                    margin-top:5px;              
+                                }
+                                .contact-container{
+                                    display:inline-block;
+                                    width:80%;
+
+                                    .circle-title{
+                                        color:@main-color;
+                                        text-transform: uppercase;
+                                        font-weight:700;
+                                        font-size:16px;
+                                    }
+
+                                    .input{
+                                        width:100%;
+                                        display:block;
+                                        font-size:16px;
+                                        font-weight:700;
+                                        border:none;
+                                        background-color:transparent;
+                                        margin-bottom:6px;
+                                    }
+                                }
+                            }
+                        }                            
+                    }
+                    .block{
+                        .balance-cont-title{
+                            display:flex;
+                            justify-content:space-between;
+                            width:100%;
+                            margin-bottom:10px;
+
+                            &:nth-child(n){
+                                flex-grow:1;
+                            }
+                            &:nth-child(2){
+                                text-align:center;
+                            }
+                            &:last-child{
+                                text-align:end;
+                            }
+                        }
+                        .balance-container{
+                            min-height:230px;
+                            position:relative;
+                        
+                            .dotted-line{
+                                width:50%;
+                                height:100%;
+                                margin:0;
+                                border-style:none;
+                                border-right-style: dotted;
+                                border-width: 1px;
+                                border-color:@dotted-line-color;
+                                position: absolute
+                            }
+
+                            .happiness-container{
+                                position: absolute;    
+                                width:100%;
+                                min-height:inherit;
+                                text-align:center;
+                                overflow:hidden;
+
+                                .circles-container{
+                                    width:200px;
+                                    height:100px;
+                                    left:107px;
+                                    top:30px;
+                                    position:relative;
+
+                                    .circle-transparent{
+                                        width: 50%;
+                                        height: 100%;
+                                        border-radius: 50%;
+                                        background-color:@circle-transparent-color;
+                                        position: absolute;
+
+                                        &.circle-transparent-right{
+                                            margin-left:35%;
+                                        }
+                                    }
+
+                                    .computer{
+                                        width: 16%;
+                                        height: 16%;
+                                        background-color:transparent;
+                                        border-width:6px;
+                                        border-color:@background;
+                                        border-style:solid;
+                                        position: absolute;
+                                        top:33%;
+                                        left:14%;
+                                    }
+
+                                    .computer-bottom{
+                                        width: 12%;
+                                        height: 10%;
+                                        background-color:@background;
+                                        position: absolute;
+                                        top:59%;
+                                        left:19%;
+                                    }
+
+                                    .smile-face{
+                                        width: 18%;
+                                        height: 36%;
+                                        border-radius: 50%;
+                                        background: @background;
+                                        position: absolute;
+                                        top: 32%;
+                                        left: 52%
+                                    }
+
+                                    .smile-eye{
+                                        width: 2%;
+                                        height: 4%;
+                                        border-radius: 50%;
+                                        background: @circle-pseudo-transparent-color;   
+                                        position: absolute;
+                                        top: 44%;
+
+                                        &.smile-left-eye{
+                                            left: 57%;
+                                        }
+
+                                        &.smile-right-eye{
+                                            left: 63%;
+                                        }
+                                    }
+
+                                    .smile-smile{
+                                        width: 14px;  
+                                        height: 7px;  
+                                        background-color: @circle-pseudo-transparent-color;   
+                                        border-bottom-left-radius: 10px;  
+                                        border-bottom-right-radius: 10px;  
+                                        border: 1px solid @circle-pseudo-transparent-color;   
+                                        border-bottom: 0;  
+                                        margin-left: 114px;  
+                                        margin-top: 51px;  
+                                        position: absolute; 
+                                    }
+                                }
+                            }
+
+                            .balance-col-container{
+                                min-height:230px;
+                                display:flex;
+                                flex-direction:row;
+                                justify-content:space-between;
+                                align-items:stretch;
+
+                                .happiness-left-col{
+                                    height:inherit;
+                                    display:flex;
+                                    flex-direction:column;
+                                    justify-content:space-between;
+                                    align-items:flex-start;
+                                    height:inherit;
+                                    max-width:50%;
+                                }
+
+                                .happiness-right-col{
+                                    height:inherit;
+                                    display:flex;
+                                    flex-direction:column;
+                                    text-align:right;
+                                    justify-content:space-between;
+                                    align-items:flex-end;
+                                    height:inherit;
+                                    max-width:50%;
+                                }
+                            }
+                        }
+                    }            
+                    .skills-container{
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:space-between;
+                        font-size:11px;
+
+                        .skills-row{
+                            display:flex;
+                            flex-direction:row;
+                            justify-content:space-between;
+                            width:100%;
+
+                            .skills-text{
+                                font-weight:600;
+                                font-size:14px;
+                                height:16px;
+                                margin-bottom:11px;
+                            }
+                            .skills-column{
+                                width:50% ;  
+
+                                .balance-line{
+                                    width:auto;
+                                    height:16px;
+                                    background: linear-gradient(to right, @gradient-color, @background, @gradient-color);
+                                    border-right-style: solid;
+                                    border-color:@balance-line-border-color;
+                                    border-width:0;
+                                    margin-bottom:11px;
+                                }
+
+                                .balance-line-1{
+                                    border-width:10px;
+                                }
+
+                                .balance-line-2{
+                                    border-width:40px;
+                                }
+
+                                .balance-line-3{
+                                    border-width:4px;
+                                }
+
+                                .balance-line-4{
+                                    border-width:9px;
+                                }
+
+                                .balance-line-5{
+                                    border-width:15px;
+                                }
+                            }
+                        }
+                    }            
+                    .histogram-container{
+                        display:flex;
+                        flex-wrap:nowrap;
+                        flex-direction:row;
+
+                        .histogram-percent{
+                            font-size:15px;
+                            margin-top:8px;
+                            margin-left:8px;
+                            font-weight:500;
+                        }
+                        .histogram-graphic{
+                            position:absolute;
+                            margin-top:-25px;
+                            margin-left:50px;
+                            border-color:black;
+                            border-width:4px;
+                            border-left-style:solid;
+                            border-top-style:solid;
+                            padding-left:8px;
+                            min-height:300px;
+                            min-width:220px;
+                            padding-right:25px;
+                            font-size:8px;
+                            font-weight:bold;
+                            transform-origin:0,0;
+                            -webkit-transform: rotate(-90deg);
+                            transform: rotate(-90deg);
+
+                            .histogram-line-print{ 
+                                .histogram-line(black, linear-gradient(to bottom, @gradient-color,  @background, @gradient-color));
+                            }
+                            .histogram-line-web{     
+                                .histogram-line(@background, linear-gradient(to bottom, @balance-title-color, @gradient-color, @balance-title-color)); 
+                            }
+                        }
+                    }
+                    .legend-block{
+                        margin-top:250px;
+                        font-weight:bold;
+                        font-size:14px;
+                        margin-bottom:20px;
+
+                        .print-legend{
+                            .legend(linear-gradient(to right, @gradient-color, @background, @gradient-color));
+                            margin-left:100px;
+                        }
+                        .web-legend{
+                            .legend(linear-gradient(to right, @balance-title-color, #8e649A, @balance-title-color));
+                            margin-left:10px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            background-color:@main-color;
+            background: linear-gradient(to right, @gradient-color,  @background, @gradient-color);
+            min-height:40px;
+            bottom:20px;
+            width:100%;
+            position:absolute;
+            z-index:2;
+            text-align: center;
+            color:@footer-text-color;
+            font-family:Calibri;
+            font-size:20px;
+            display:table-cell;
+            vertical-align:middle;
+
+            .link-text{
+                font-size:25px;
+            }
+        }
+    }
+}
+
+@import "percents.less";

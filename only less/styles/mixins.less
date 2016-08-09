@@ -1,0 +1,24 @@
+.histogram-line(@text-color, @gradient){
+    height:18px; 
+    margin-top:12px;
+    padding:8px;
+    font-size:15px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    background:@gradient;
+    color:@text-color;
+}
+
+.legend(@gradient){
+    display:inline-block; 
+    &:before{
+        content:" ";
+        display:inline-block;
+        width:25px;
+        height:25px;
+        background-color:black;
+        margin-right:8px;
+        background:@gradient;
+    }
+}

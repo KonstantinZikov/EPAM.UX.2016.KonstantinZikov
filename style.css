@@ -19,8 +19,6 @@ ul{
     padding-bottom: 15px;
     width:980px;
     font-family: Arial;
-    flex-direction:column;
-    justify-content:space-around; 
     position:relative;
     min-height:100%;
 }
@@ -144,10 +142,6 @@ ul{
 
 .education-container li{
     position:relative;
-}
-
-.line{
-    
 }
 
 .education-container li:last-child .line{
@@ -281,18 +275,18 @@ ul{
 }
 
 .balance-cont-title{
-    display:flex;
-    justify-content:space-between;
-    width:100%;
-    margin-bottom:10px;
+    overflow:hidden;
 }
-.balance-cont-title:nth-child(n){
-    flex-grow:1;
+
+
+.balance-cont-title :nth-child(n){
+    float:left;
+    width:33%;
 }
-.balance-cont-title:nth-child(2){
+.balance-cont-title :nth-child(2){
     text-align:center;
 }
-.balance-cont-title:last-child{
+.balance-cont-title :last-child{
     text-align:end;
 }
 
@@ -379,40 +373,34 @@ ul{
     position:relative;
 }
 .happiness-left-col{
-    height:inherit;
+    float:left;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:flex-start;
-    height:inherit;
+    min-height:inherit;
     max-width:50%;
 }
 
-.happiness-middle-col{
-    height:inherit;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-    height:inherit;
-}
-
 .happiness-right-col{
+    float:right;
     height:inherit;
     display:flex;
     flex-direction:column;
     text-align:right;
     justify-content:space-between;
     align-items:flex-end;
-    height:inherit;
+    min-height:inherit;
     max-width:50%;
 }
+
 .balance-title{
     font-weight:bold;
     font-size:15px;
     color: #61007d;
     text-transform:uppercase;
 }
+
 .balance-text{
     font-weight:600;
     font-size:14px;
@@ -424,27 +412,22 @@ ul{
 }
 .balance-col-container{
     min-height:230px;
-    display:flex;
+    overflow:hidden;
     flex-direction:row;
     justify-content:space-between;
     align-items:stretch;
 }
 
 .skills-container{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
     font-size:11px;
     width:calc(100% - 10px);
 }
 .skills-column{
-    width:50% ;  
+    width:50% ;
+    display:inline-block;  
 }
 
 .skills-row{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
     width:100%   
 }
 
@@ -453,6 +436,8 @@ ul{
     font-size:14px;
     height:16px;
     margin-bottom:11px;
+    float:left;
+    width:50%;
 }
 
 .balance-line{
@@ -480,12 +465,6 @@ ul{
     border-width:15px;
 }
 
-
-.histogram-container{
-    display:flex;
-    flex-wrap:nowrap;
-    flex-direction:row;
-}
 .histogram-percent{
     font-size:15px;
     margin-top:8px;
@@ -494,8 +473,8 @@ ul{
 }
 .histogram-graphic{
     position:absolute;
-    margin-top:-25px;
-    margin-left:50px;
+    margin-top:-50px;
+    margin-left:90px;
     border-color:black;
     border-width:4px;
     border-left-style:solid;
